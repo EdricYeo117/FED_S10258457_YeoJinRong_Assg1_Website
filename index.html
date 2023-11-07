@@ -20,6 +20,8 @@
         <img id="logo" alt="logo" src="public/Yorushika_Logo.jpg">
     </div>
     <img id="banner" src="public/banner.png" alt="banner" width="200" height="240">
+
+    <!-- Band Info -->
     <h1>
         About Yorushika
     </h1>
@@ -50,6 +52,7 @@
             <img id="band-image" src="public/band.png" alt="Yorushika-Band">
         </div>
     </div>
+    <!-- Discography Links-->
     <h2> Discography</h2>
     <div id="albums">
         <div>
@@ -84,7 +87,7 @@
         </div>
         <hr>
     </div>
-
+    <!-- Table for upcoming shows -->
     <h2> Upcoming Shows</h2>
     <div id="shows">
         <table id="shows-table">
@@ -125,7 +128,49 @@
             </tr>
         </table>
     </div>
+    <!-- Form for booking tickets -->
+    <div id="ticket-book">
+        <h2> Book Advanced Tickets Now!</h2>
+        <form id="ticket-form">
+            <div class="ticket-group">
+                <label for="name"> Full Name</label><br>
+                <input type="text" id="name" name="Full Name" required placeholder="John Doe">
+            </div>
+            <div class="ticket-group">
+                <label for="email"> Email</label><br>
+                <input type="email" id="email" name="Email Address" required placeholder="johndoe@gmail.com">
+            </div>
+            <div class="ticket-group">
+                <label for="phone"> Phone No.</label><br>
+                <input type="phone" id="phone" name="Phone Number" required placeholder="+6512345678">
+            </div>
+            <div class="ticket-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="ticket-group">
+                <label for="position">Shows Applied for</label><br>
+                <select id="position" name="position" required>
+                    <option value="">Select an option</option>
+                    <option value="CJ23/24">COUNTDOWN JAPAN 23/24</option>
+                    <option value="FM802">FM802 ROCK FESTIVAL RADIO CRAZY</option>
+                    <option value="LT23">LIVE TOUR 2023 “Moon and Cat Dance”</option>
+                    <option value="SGF23">SINGAPORE FES 2023</option>
+                </select>
+            </div>
+            <div class="ticket-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <div class="ticket-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 
+    <!-- Footer links -->
     <div id="footer">
         <ul id="footer-links">
             <li>
