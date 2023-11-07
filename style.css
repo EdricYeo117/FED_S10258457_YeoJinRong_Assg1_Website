@@ -25,3 +25,24 @@ body{
 h1{
     text-align: center;
 }
+
+#about {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#description{
+    width: 50%;
+    padding-right: 8px;
+}
+
+#description-info{
+    margin-top: 0;
+}
+
+#band-image{
+    border-radius: 5px;
+    width: 100%;
+}
