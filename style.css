@@ -1,7 +1,16 @@
+*{
+    font-size: 20px;
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 #logo{
@@ -22,8 +31,14 @@ body{
     object-fit: cover
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
 h1{
     text-align: center;
+    font-size: 2.5rem;
 }
 
 #about {
@@ -36,6 +51,7 @@ h1{
 #description{
     width: 50%;
     padding-right: 8px;
+    font-size: 1.25rem;
 }
 
 #description-info{
@@ -49,6 +65,7 @@ h1{
 
 h2{
     text-align: center;
+    font-size: 2rem;
 }
 
 .album-name {
@@ -69,4 +86,33 @@ h2{
 
 .listen-spotify{
     float:right;
+}
+
+#shows{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#shows-table{
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse; 
+}
+
+.shows-header-row th{
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.shows-data-row td{
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+}
+
+#shows-table tr:nth-child(odd){
+    background-color: ghostwhite;
 }
