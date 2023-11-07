@@ -46,3 +46,27 @@ h1{
     border-radius: 5px;
     width: 100%;
 }
+
+h2{
+    text-align: center;
+}
+
+.album-name {
+    color: gray;
+    margin-bottom: 16px;
+}
+
+.album-year {
+    color: gray;
+    margin-bottom: 16px;
+}
+
+#albums {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.listen-spotify{
+    float:right;
+}
