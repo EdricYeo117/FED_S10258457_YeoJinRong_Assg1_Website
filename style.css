@@ -198,3 +198,10 @@ h3{
     width: 16px;
     height: 16px;
 }
+
+.ticket-group input[type="submit"]{
+    background-color: #3B82F6;
+    color:whitesmoke;
+    font-weight: 500;
+    cursor: pointer;
+}
