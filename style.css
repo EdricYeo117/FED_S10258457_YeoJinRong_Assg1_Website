@@ -1,7 +1,6 @@
 /* Universal styles*/
 html{
-    font-size: 20px;
-    background-color:whitesmoke
+    font-size: 14px;
 }
 
 body{
@@ -30,11 +29,7 @@ h1, h2, h3, h4, h5, h6{
 h1{
     text-align: center;
     font-size: 2.5rem;
-}
-
-h2{
-    text-align: center;
-    font-size: 2rem;
+    margin: 12px 0;
 }
 
 /* Misc. Styles */
@@ -52,7 +47,7 @@ h2{
 
 #banner {
     width: 100%;
-    height: 500px;
+    height: 150px;
     object-fit: cover
 }
 
@@ -61,14 +56,13 @@ h2{
 
 #about {
     display: flex;
-    max-width: 800px;
+    flex-direction: column;
+    max-width: 500px;
     margin: 0 auto;
     padding: 8px;
 }
 
 #description{
-    width: 50%;
-    padding-right: 8px;
     font-size: 1.25rem;
 }
 
@@ -76,9 +70,14 @@ h2{
     margin-top: 0;
 }
 
+#band {
+    width: 100%;
+}
+
 #band-image{
     border-radius: 5px;
     width: 100%;
+    height: 240px;
     border: 1px solid black;
 }
 
@@ -103,36 +102,46 @@ h2{
 .listen-spotify{
     float:right;
 }
-/* Styles for shows Table */
+
+
+/* Styles for shows list/table*/
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
 
 #shows{
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
 
-#shows-table{
-    width: 100%;
-    border: 1px solid gray;
-    border-collapse: collapse; 
+.show {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 8px;
 }
 
-.shows-header-row th{
-    border: 1px solid gray;
-    padding: 8px;
-    background-color: #DBEAFE;
-    text-align: center;
+#shows-list {
+    display: block;
+}
+
+.show-title {
+    font-size: 1.25rem;
+    font-weight: 500;
     color: #222222;
 }
 
-.shows-data-row td{
-    border: 1px solid gray;
-    padding: 8px;
-    text-align: center;
+.show-detail {
+    margin-top: 4px;
+    color: #555555;
 }
 
-#shows-table tr:nth-child(odd){
-    background-color: #EFF6FF;
+#shows-table {
+    display: none;
 }
 
 /* Footer Styles and copyright */
@@ -156,8 +165,8 @@ h3{
 }
 
 #footer-links li{
-    display: inline;
     padding: 0 16 px;
+    margin: 8px 16px;
 }
 
 .copyright{
@@ -168,7 +177,7 @@ h3{
 /* Form styles, will use for index.html and about us*/
 
 #ticket-book {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
@@ -177,11 +186,14 @@ h3{
     margin: 16px;
 }
 
-#ticket-form label {
+.ticket-group label {
     font-weight: 600;
 }
 
-#ticket-form input, select, textarea{
+.ticket-group input,
+select,
+textarea {
+    width: 90%;
     padding: 8px;
     font-size: 1.25rem;
     margin-top: 4px;
@@ -190,7 +202,6 @@ h3{
 }
 
 .ticket-group textarea{
-    width: 80%;
     font-family: 'Courier New', Courier, monospace
 }
 
@@ -204,4 +215,117 @@ h3{
     color:whitesmoke;
     font-weight: 500;
     cursor: pointer;
+} 
+
+/* Media Queries */
+/* Tablets */
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    #banner {
+        height: 200px;
+
+    }
+
+    h1 {
+        margin: 16px 0;
+    }
+
+    .ticket-group input,
+    select,
+    textarea {
+        width: auto;
+    }
+
+    .form-group textarea {
+        width: 80%
+    }
+
+    #footer-links li {
+        display: inline;
+    }
+}
+
+/* Laptops */
+@media screen and (min-width: 768px) {
+
+    #banner {
+        height: 250px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    #about {
+        max-width: 800px;
+        flex-direction: row;
+    }
+
+    #description {
+        width: 50%;
+        padding-right: 8px;
+    }
+
+    #band {
+        width: 50%;
+    }
+
+    #shows {
+        max-width: 800px;
+    }
+
+    #shows-list {
+        display: none;
+    }
+
+    #shows-table {
+        display: table;
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+
+    .shows-header-row th {
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: #DBEAFE;
+        text-align: center;
+        color: #222222;
+    }
+
+    .shows-data-row td {
+        border: 1px solid gray;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #shows-table tr:nth-child(odd) {
+        background-color: #EFF6FF;
+    }
+
+    #ticket-book {
+        max-width: 800px;
+    }
+
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+
+    html {
+        font-size: 16px;
+    }
+
+}
+
+/* Large Desktops */
+@media screen and (min-width: 1200px) {
+
+    #banner {
+        height: 300px;
+    }
+
 }
