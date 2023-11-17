@@ -1,9 +1,9 @@
 /* Universal styles*/
-html{
+html {
     font-size: 14px;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Courier Prime', monospace;
@@ -11,38 +11,107 @@ body{
     color: #444444;
 }
 
-a{
+a {
     text-decoration: none;
     color: #3b82f6;
 }
 
-a:hover, a:focus{
+a:hover,
+a:focus {
     color: #1d4ed8;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #222222;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 2.5rem;
     margin: 12px 0;
 }
 
-/* Misc. Styles */
-#logo{
-    height:100px;
-    width:100px;
-    margin: 0;
+/* Nav Bar Styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80x;
+    background-color: #bcc0c3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
 #navbar {
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #434645;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #5f9cc8;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #cb8757;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#bar {
+    width: 16px;
+    height: 16px;
+}
+
+#close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 16px;
+}
+
+#close-img {
+    height: 16px;
+    width: 16px;
+}
+
+/* Misc. Styles */
+#logo {
+    height: 75px;
+    width: auto;
     margin: 0;
-    
 }
 
 #banner {
@@ -62,11 +131,11 @@ h1{
     padding: 8px;
 }
 
-#description{
+#description {
     font-size: 1.25rem;
 }
 
-#description-info{
+#description-info {
     margin-top: 0;
 }
 
@@ -74,7 +143,7 @@ h1{
     width: 100%;
 }
 
-#band-image{
+#band-image {
     border-radius: 5px;
     width: 100%;
     height: 240px;
@@ -99,26 +168,26 @@ h1{
     padding: 0 8px;
 }
 
-.listen-spotify{
-    float:right;
+.listen-spotify {
+    float: right;
 }
 
 
 /* Styles for shows list/table*/
 
-h2{
+h2 {
     text-align: center;
     font-size: 2rem;
 }
 
 
-#shows{
+#shows {
     max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
 
-.show {
+.show-info {
     border: 1px solid #dddddd;
     border-radius: 5px;
     margin-bottom: 8px;
@@ -145,31 +214,31 @@ h2{
 }
 
 /* Footer Styles and copyright */
-h3{
+h3 {
     margin-top: 0;
     margin-bottom: 8px;
     font-size: 1.75rem;
 
 }
 
-#footer{
+#footer {
     background-color: #F8FAFC;
-    padding:8px;
+    padding: 8px;
     margin-top: 32px;
     text-align: center;
 }
 
-#footer-links{
-    list-style: none;   
+#footer-links {
+    list-style: none;
     text-align: center;
 }
 
-#footer-links li{
+#footer-links li {
     padding: 0 16 px;
     margin: 8px 16px;
 }
 
-.copyright{
+.copyright {
     color: #71717A;
     font-size: 0.875rem;
 }
@@ -182,7 +251,7 @@ h3{
     padding: 0 8px;
 }
 
-.ticket-group{
+.ticket-group {
     margin: 16px;
 }
 
@@ -201,21 +270,21 @@ textarea {
     border: 1px solid gray;
 }
 
-.ticket-group textarea{
+.ticket-group textarea {
     font-family: 'Courier New', Courier, monospace
 }
 
-.ticket-group input[type="checkbox"]{
+.ticket-group input[type="checkbox"] {
     width: 16px;
     height: 16px;
 }
 
-.ticket-group input[type="submit"]{
+.ticket-group input[type="submit"] {
     background-color: #3B82F6;
-    color:whitesmoke;
+    color: whitesmoke;
     font-weight: 500;
     cursor: pointer;
-} 
+}
 
 /* Media Queries */
 /* Tablets */
@@ -248,9 +317,50 @@ textarea {
     }
 }
 
+@media (max-width: 767px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -310px;
+        height: 100vh;
+        width: 300px;
+        background-color: #bcc0c3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 1.5rem;
+        padding-left: 20px;
+
+    }
+}
+
 /* Laptops */
 @media screen and (min-width: 768px) {
 
+
+    /* Nav Bar Styles */
     #banner {
         height: 250px;
     }
