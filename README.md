@@ -5,5 +5,12 @@ This website is orientated towards **international** fans of the Japanese Indie 
 
 The website's purpose is to **alleviate** those barriers of entry and serve as an accessible platform for new fans to learn more about the band, as well as its existing discography and upcoming shows.
 
-## Value website provides
+## Value Website Provides
 The website is in English, which is the most popular medium of commuication across the world.
+This provides the band an opportunity to bridge the cultural gap between itself and international fans
+
+## Key Features:
+1) Clean and modernised homepage that broadcasts what shows are upcoming
+2) "About Us" section that briefly describes the band and links to music platforms
+3) Online Merchandise Shop
+4) Contact Us page to allow prospective showrunners to provide the band gigs
