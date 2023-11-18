@@ -1,11 +1,30 @@
 /*Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* Universal styles*/
-html {
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    background-color: #f5f7f8;
+    --main-color: #cb8757;
+    --text-color: #171427;
+    --bg-color: #bcc0c3;
+    --s1-color: #5f9cc8;
+    --s2-color: #434645;
+    --s3-color: #d1d7dc;
     font-size: 14px;
 }
+
 
 body {
     margin: 0;
@@ -17,12 +36,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #3b82f6;
+    color: var(--s1-color);
 }
 
 a:hover,
 a:focus {
-    color: #1d4ed8;
+    color: var(--s1-color);
 }
 
 h1,
@@ -43,12 +62,13 @@ h1 {
 }
 
 /* Nav Bar Styles */
+
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80x;
-    background-color: #bcc0c3;
+    background-color: var(--bg-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -74,7 +94,7 @@ h1 {
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: #5f9cc8;
+    color: var(--s1-color)
 }
 
 #navbar li a.active::after,
@@ -82,7 +102,7 @@ h1 {
     content: "";
     width: 30%;
     height: 2px;
-    background-color: #cb8757;
+    background-color: var(--main-color);
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -112,6 +132,7 @@ h1 {
 }
 
 /* Misc. Styles */
+
 #logo {
     height: 75px;
     width: auto;
@@ -123,7 +144,6 @@ h1 {
     height: 150px;
     object-fit: cover
 }
-
 
 /* Styles for about */
 
@@ -157,12 +177,12 @@ h1 {
 /* Styles for albums */
 
 .album-name {
-    color: gray;
+    color: var(--main-color);
     margin-bottom: 16px;
 }
 
 .album-year {
-    color: gray;
+    color: var(--s1-color);
     margin-bottom: 16px;
 }
 
@@ -175,7 +195,6 @@ h1 {
 .listen-spotify {
     float: right;
 }
-
 
 /* Styles for shows list/table*/
 
@@ -192,7 +211,7 @@ h2 {
 }
 
 .show-info {
-    border: 1px solid #dddddd;
+    border: 1px solid var(--s3-color);
     border-radius: 5px;
     margin-bottom: 8px;
     padding: 8px;
@@ -210,7 +229,7 @@ h2 {
 
 .show-detail {
     margin-top: 4px;
-    color: #555555;
+    color: var(--s2-color);
 }
 
 #shows-table {
@@ -218,6 +237,7 @@ h2 {
 }
 
 /* Footer Styles and copyright */
+
 h3 {
     margin-top: 0;
     margin-bottom: 8px;
@@ -226,8 +246,6 @@ h3 {
 }
 
 #footer {
-    background-color: #F8FAFC;
-    padding: 8px;
     margin-top: 32px;
     text-align: center;
 }
@@ -235,16 +253,18 @@ h3 {
 #footer-links {
     list-style: none;
     text-align: center;
+    padding: 0px;
 }
 
 #footer-links li {
-    padding: 0 16 px;
+    padding: 0 16px;
     margin: 8px 16px;
 }
 
 .copyright {
-    color: #71717A;
+    color: #222222;
     font-size: 0.875rem;
+    text-align: center;
 }
 
 /* Form styles, will use for index.html and about us*/
@@ -271,7 +291,7 @@ textarea {
     font-size: 1.25rem;
     margin-top: 4px;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid var(--s3-color);
 }
 
 .ticket-group textarea {
@@ -284,13 +304,14 @@ textarea {
 }
 
 .ticket-group input[type="submit"] {
-    background-color: #3B82F6;
+    background-color: var(--s1-color);
     color: whitesmoke;
     font-weight: 500;
     cursor: pointer;
 }
 
 /* About Section in about.html */
+
 .bigtext {
     text-align: center;
     color: #5F9CC8;
@@ -343,7 +364,7 @@ textarea {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    color: #bcc0c3;
+    color: var(--bg-color);
     border: 1px solid black;
     position: relative;
     margin-left: auto;
@@ -352,6 +373,7 @@ textarea {
 }
 
 /* Discography Section in about.html */
+
 #disco-section {
     display: flex;
     flex-wrap: wrap;
@@ -362,8 +384,8 @@ textarea {
     width: 300px;
     height: 400px;
     margin: 20px;
-    border: 1px solid #cb8757;
-    background-color: #5f9cc8;
+    border: 1px solid var(--main-color);
+    background-color: var(--s1-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -372,7 +394,7 @@ textarea {
     width: 100%;
     height: 60%;
     object-fit: cover;
-    border-bottom: 1px solid #bcc0c3;
+    border-bottom: 1px solid var(--bg-color);
 }
 
 .album-info {
@@ -389,23 +411,153 @@ textarea {
 .album-date {
     font-style: italic;
     margin-top: 8px;
-    color: #434645;
+    color: var(--s3-color);
 }
 
 .album-description {
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #434645;
+    color: var(--s3-color);
+}
+
+/* Info-Platforms Section */
+
+#info-section {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+#info-section-header {
+    text-align: center;
+}
+
+.overtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.info-section-heading {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.info-section-subtitle {
+    text-align: center;
+    margin: 8px auto 48px auto;
+    max-width: 500px;
+
+}
+
+.info-section-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-section-box {
+    background-color: var(--s3-color);
+}
+
+.info-card {
+    background-color: var(--s3-color);
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: 6px 2px 25px -9x #0000001A;
+    width: 100%;
 }
 
 
+.platform {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--s1-color);
+    margin-top: 20px;
+}
+
+
+.song-count {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 54px;
+    margin-top: 8px;
+    color: #000000;
+}
+
+.song-count-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8A8A8A;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: #8b8b8b;
+    margin: 8px;
+}
+
+.desc-list {
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666666;
+}
+
+.desc-list ul {
+    padding: 0;
+}
+
+.desc-list li {
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+.listen-button {
+    width: 80%;
+    height: 44px;
+    border-radius: 4px;
+    border-width: 2px;
+    border: 2px solid #2f2f2f;
+    background-color: #ffffff;
+    color: #2f2f2f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.listen-button:hover {
+    background-color: #2f2f2f;
+    color: var(--s1-color);
+    border-bottom: 2px solid var(--main-color);
+    cursor: pointer;
+}
+
+.checkmark {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+}
 
 /* Media Queries */
-/* Tablets */
-@media screen and (min-width: 576px) {
 
-    /* General Styling for Mobile Devices */
-    
+/* Tablets */
+
+@media screen and (min-width: 576px) {
     html {
         font-size: 16px;
     }
@@ -432,11 +584,12 @@ textarea {
     #footer-links li {
         display: inline;
     }
-}
 
+}
+/* Mobiles - Max Width */
 @media (max-width: 767px) {
 
-    /* Nav Bar Styles */
+    /* Nav bar styles */
     #navbar {
         display: flex;
         flex-direction: column;
@@ -447,7 +600,7 @@ textarea {
         right: -310px;
         height: 100vh;
         width: 300px;
-        background-color: #bcc0c3;
+        background-color: var(--bg-color);
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
@@ -465,7 +618,6 @@ textarea {
         display: flex;
         align-items: center;
     }
-
 
     #mobile i {
         color: #1a1a1a;
@@ -495,8 +647,7 @@ textarea {
 /* Laptops */
 @media screen and (min-width: 768px) {
 
-
-    /* Nav Bar Styles */
+    /* index.html styles */
     #banner {
         height: 250px;
     }
@@ -523,6 +674,7 @@ textarea {
         max-width: 800px;
     }
 
+    /* Shows list/table styles */
     #shows-list {
         display: none;
     }
@@ -530,12 +682,12 @@ textarea {
     #shows-table {
         display: table;
         width: 100%;
-        border: 1px solid gray;
+        border: 1px solid var(--s3-color);
         border-collapse: collapse;
     }
 
     .shows-header-row th {
-        border: 1px solid gray;
+        border: 1px solid var(--s3-color);
         padding: 8px;
         background-color: #DBEAFE;
         text-align: center;
@@ -543,7 +695,7 @@ textarea {
     }
 
     .shows-data-row td {
-        border: 1px solid gray;
+        border: 1px solid var(--s3-color);
         padding: 8px;
         text-align: center;
     }
@@ -552,6 +704,7 @@ textarea {
         background-color: #EFF6FF;
     }
 
+    /* Ticket form styles */
     #ticket-book {
         max-width: 800px;
     }
@@ -584,6 +737,8 @@ textarea {
 
     .info-card {
         width: calc(100% / 3 - 20px);
+        margin: 0 10px;
+        border-radius: 5px;
     }
 }
 
