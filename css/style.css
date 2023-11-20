@@ -15,7 +15,6 @@
 }
 
 :root {
-    background-color: #f5f7f8;
     --main-color: #cb8757;
     --text-color: #171427;
     --bg-color: #bcc0c3;
@@ -23,6 +22,8 @@
     --s2-color: #434645;
     --s3-color: #d1d7dc;
     font-size: 14px;
+    background: rgb(209,215,220);
+    background: radial-gradient(circle, rgba(209,215,220,1) 0%, rgba(255,255,255,1) 50%, rgba(188,192,195,1) 100%);
 }
 
 
@@ -552,6 +553,90 @@ textarea {
     height: 16px;
     margin-bottom: -2px;
 }
+
+/* Styles for shop.html */
+
+#product-img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--bg-color);
+}
+
+/* Shop Content */
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.5rem;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-box:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: hsl(249, 32%, 17);
+}
+
 
 /* Media Queries */
 
