@@ -120,7 +120,7 @@ h1 {
 #bar {
     width: auto;
     height: auto;
-    font-size: 5rem;
+    font-size: 2.5rem;
     margin-right: 30px;
 }
 
@@ -366,18 +366,30 @@ textarea {
     height: 44px;
     width: 138px;
     border-radius: 4px;
-    background-color: #2f2f2f;
+    background-image: linear-gradient(225deg, var(--bg-color) 0%, var(--s1-color) 50%, var(--s3-color) 100%);
+    background-size: 200% auto;
+    color: #444444;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    color: var(--bg-color);
-    border: 1px solid black;
+    border: 1px solid var(--s3-color);
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
+  #contact-button:hover {
+    background-position: right center;
+    color: var(--main-color);
+    text-decoration: none;
+  }
+ 
 /* Discography Section in about.html */
 
 #disco-section {
