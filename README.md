@@ -12,5 +12,5 @@ This provides the band an opportunity to bridge the cultural gap between itself 
 ## Key Features:
 1) Clean and modernised homepage that broadcasts what shows are upcoming
 2) "About Us" section that briefly describes the band and links to music platforms
-3) Online Merchandise Shop
-4) Contact Us page to allow prospective showrunners to provide the band gigs
+3) Online Merchandise Shop with functional cart, with features of adding items to cart, removing items from cart and "buy now" button
+4) "LIVE" Page that showcases the google map location of respective venues for the live tour 
