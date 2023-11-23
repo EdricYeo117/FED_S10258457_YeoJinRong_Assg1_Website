@@ -22,12 +22,19 @@ window.onload = function () {
   }
 
   function ready() {
-  // Adding to Cart - Cart
-  var addCart = document.getElementsByClassName('add-cart')
-  for (var i = 0; i < addCart.length; i++) {
-    var button = addCart[i]
-    button.addEventListener('click', addCartClicked);
-  }
+    // Adding to Cart - Cart
+    var addCart = document.getElementsByClassName('add-cart')
+    for (var i = 0; i < addCart.length; i++) {
+      var button = addCart[i]
+      button.addEventListener('click', addCartClicked);
+    }
+    //Remove Items from Cart
+    var removeCartButtons = document.getElementsByClassName('cart-remove')
+    console.log(removeCartButtons)
+    for (var i = 0; i < removeCartButtons.length; i++) {
+      var button = removeCartButtons[i]
+      button.addEventListener("click", removeCartItem)
+    }
   }
 
   // Add to Cart Function
@@ -40,6 +47,7 @@ window.onload = function () {
     addProductToCart(title, price, productImg);
     updatetotal();
   }
+
   // Add Product to Cart Function
   function addProductToCart(title, price, productImg) {
     var cartShopBox = document.createElement('div');
@@ -52,6 +60,7 @@ window.onload = function () {
         return;
       }
     }
+
     // Cart Box Content, Making the indivdual product card in the cart
     var cartBoxContent = `
     <img src="${productImg}" alt="" class="cart-img">
@@ -62,8 +71,18 @@ window.onload = function () {
     </div>
     <!-- Remove Cart -->
     <i class='bx bxs-trash-alt cart-remove'></i>`;
-
+    //Add Items to Cart
     cartShopBox.innerHTML = cartBoxContent;
     cartItems.append(cartShopBox);
-}
+    //Remove Items from Cart
+    cartShopBox.getElementsByClassName('cart-remove')[0]
+    .addEventListener('click', removeCartItem);
+  }
+
+  // Remove Items From Cart
+  function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.remove();
+    updatetotal();
+  }
 }
