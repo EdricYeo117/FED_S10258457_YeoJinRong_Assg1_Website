@@ -41,6 +41,9 @@ window.onload = function () {
       var input = quantityInputs[i]
       input.addEventListener('change', quantityChanged);
     }
+    // Buy Button - Cart
+    document.getElementsByClassName('btn-buy')[0]
+      .addEventListener('click', buyButtonClicked);
   }
 
   // Add to Cart Method
@@ -120,5 +123,15 @@ window.onload = function () {
     // If price contains decimal
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('total-price')[0].innerText = '$' + total;
+  }
+
+  //Buy Button
+  function buyButtonClicked() {
+    alert('Thank You For Your Purchase');
+    var cartContent = document.getElementsByClassName('cart-content')[0]
+    while (cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild)
+    }
+    updatetotal();
   }
 }
