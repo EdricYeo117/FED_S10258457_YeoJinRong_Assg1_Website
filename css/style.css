@@ -71,8 +71,8 @@ h1 {
     padding: 20px 80x;
     background-color: var(--bg-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    background: rgb(67,70,69);
-    background: linear-gradient(90deg, rgba(67,70,69,1) 0%, rgba(95,156,200,1) 35%, rgba(0,0,0,1) 100%);
+    background: rgb(67, 70, 69);
+    background: linear-gradient(90deg, rgba(67, 70, 69, 1) 0%, rgba(95, 156, 200, 1) 35%, rgba(0, 0, 0, 1) 100%);
 }
 
 #navbar {
@@ -384,12 +384,12 @@ textarea {
     display: block;
 }
 
-  #contact-button:hover {
+#contact-button:hover {
     background-position: right center;
     color: var(--main-color);
     text-decoration: none;
-  }
- 
+}
+
 /* Discography Section in about.html */
 
 #disco-section {
@@ -774,6 +774,85 @@ header {
     background: hsl(249, 32%, 17);
 }
 
+/* LIVE 23/24 Live.html Styles */
+/* Band Info Styling */
+#band-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#band-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#band-details .details h2 {
+    font-size: 2.25rem;
+    line-height: 35px;
+    padding: 20px;
+}
+
+#band-details .details h3 {
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+#band-details .details li {
+    display: flex;
+    padding: 10px 0;
+}
+
+#band-details .details li i {
+    font-size: 1.25rem;
+    padding-right: 22px;
+}
+
+#band-details .details li p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#vocalist {
+    font-size: 1rem;
+    color: var(--main-color)
+}
+
+#composer {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+#guitar {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+#bass {
+    font-size: 1rem;
+    color: var(--s1-color);
+}
+
+#drum {
+    font-size: 1rem;
+    color: var(--s2-color);
+}
+
+#piano {
+    font-size: 1rem;
+    color: var(--s2-color);
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 360px) {
@@ -971,6 +1050,21 @@ header {
         width: calc(100% / 3 - 20px);
         margin: 0 10px;
         border-radius: 5px;
+    }
+
+    /* live.html styles */
+    /* Band Info Styling */
+    #band-details {
+        flex-direction: row;
+    }
+
+    #band-details .details {
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    #band-details .map {
+        width: 55%;
     }
 }
 
