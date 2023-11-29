@@ -1,4 +1,4 @@
-window.onload = function () {
+function Cart() {
   /* Cart Javascript */
   let cartIcon = document.querySelector("#cart-icon");
   let cart = document.querySelector(".cart");

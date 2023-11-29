@@ -1,5 +1,5 @@
 /* Email Function*/
-window.onload = function () {
+function ContactButton() {
     let contact = document.querySelector("#contact-button");
     contact.onclick = () => {
         sendEmail();

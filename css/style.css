@@ -120,8 +120,9 @@ h1 {
 #bar {
     width: auto;
     height: auto;
-    font-size: 2.5rem;
+    font-size: 5rem;
     margin-right: 30px;
+    color: white;
 }
 
 #close {
@@ -129,7 +130,7 @@ h1 {
     top: 30px;
     left: 30px;
     color: #222;
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 #close-img {
@@ -202,13 +203,30 @@ h1 {
     float: right;
 }
 
+#spotify-button {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    color: white;
+    padding: 2.5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+#spotify-button:hover {
+    background-color: var(--s1-color);
+  }
+
+#spotify-button {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 /* Styles for shows list/table*/
 
 h2 {
     text-align: center;
     font-size: 2rem;
+    padding: 10px;
 }
-
 
 #shows {
     max-width: 500px;
@@ -217,7 +235,7 @@ h2 {
 }
 
 .show-info {
-    border: 1px solid var(--s3-color);
+    border: 1px solid var(--s1-color);
     border-radius: 5px;
     margin-bottom: 8px;
     padding: 8px;
@@ -241,6 +259,24 @@ h2 {
 #shows-table {
     display: none;
 }
+
+#live-button {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: white;
+    padding: 2.5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+#live-button:hover {
+    background-color: var(--s1-color);
+  }
+
+#live-button {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
 /* Footer Styles and copyright */
 
@@ -266,12 +302,17 @@ h3 {
     padding: 0 16px;
     margin: 8px 16px;
 }
+#footer-links li i{
+    font-size: 1.5rem;
+    font-size: 1rem;
+}
 
 .copyright {
     color: #222222;
     font-size: 0.875rem;
     text-align: center;
 }
+
 
 /* Form styles, will use for index.html and about us*/
 
@@ -320,7 +361,7 @@ textarea {
 
 .bigtext {
     text-align: center;
-    color: #5F9CC8;
+    color: var(--text-color);
 }
 
 #about-section {
@@ -617,6 +658,7 @@ header {
     background: linear-gradient(225deg, rgba(188, 192, 195, 1) 0%, rgba(95, 156, 200, 1) 50%, rgba(209, 215, 220, 1) 100%);
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
     transition: 0.3s;
+    z-index: 1;
 }
 
 .cart.active {
@@ -775,13 +817,21 @@ header {
 }
 
 /* LIVE 23/24 Live.html Styles */
+
 /* Band Info Styling */
+.band-section {
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 8px;
+}
+
 #band-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 10px;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -793,13 +843,15 @@ header {
 }
 
 #band-details .details h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     line-height: 35px;
-    padding: 20px;
+    padding: 15px;
+    border-bottom: 1px solid var(--s1-color);
+    border-bottom-style: dotted;
 }
 
 #band-details .details h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
@@ -824,12 +876,20 @@ header {
 
 #vocalist {
     font-size: 1rem;
-    color: var(--main-color)
+    background: var(--s1-color);
+    background: -webkit-radial-gradient(33% 100% circle, var(--s1-color) 4%, var(--main-color) 30%, var(--s1-color) 62%, var(--main-color) 85%, var(--s1-color));
+	background: radial-gradient(circle at 33% 100%, var(--s1-color) 4%, var(--main-color) 30%, var(--s1-color) 62%, var(--main-color) 85%, var(--s1-color));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #composer {
     font-size: 1rem;
-    color: var(--main-color);
+    background: var(--main-color);
+    background: -webkit-radial-gradient(33% 100% circle, var(--main-color) 4%, var(--s1-color) 30%, var(--main-color) 62%, var(--s1-color) 85%, var(--main-color));
+	background: radial-gradient(circle at 33% 100%, var(--main-color) 4%, var(--s1-color) 30%, var(--main-color) 62%, var(--s1-color) 85%, var(--main-color));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #guitar {
@@ -849,16 +909,22 @@ header {
 
 #piano {
     font-size: 1rem;
-    color: var(--s2-color);
+    color: var(--sg-color) 25%;
 }
 
 /* Venue Info Styling */
+.venue-section {
+    border: 1px solid var(--s1-color);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
 #venue-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 10px;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -902,7 +968,7 @@ header {
 }
 
 #venue-details .map {
-    width: 100%;
+    width: 95%;
     height: 400px;
 }
 
@@ -912,9 +978,8 @@ header {
 }
 
 
-
-
 /* Media Queries */
+
 @media screen and (max-width: 360px) {
     .cart {
         width: 280px;
@@ -926,6 +991,7 @@ header {
         width: 320px;
     }
 }
+
 
 /* Tablets */
 @media screen and (min-width: 576px) {
@@ -955,6 +1021,7 @@ header {
     #footer-links li {
         display: inline;
     }
+
 }
 
 /* Mobiles - Max Width */
@@ -971,10 +1038,12 @@ header {
         right: -310px;
         height: 100vh;
         width: 300px;
-        background-color: var(--bg-color);
+        background: rgb(181, 189, 195);
+        background: linear-gradient(225deg, rgba(181, 189, 195, 1) 0%, rgba(95, 156, 200, 1) 50%, rgba(181, 189, 195, 1) 100%);
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
+        z-index: 1;
     }
 
     #navbar.active {
@@ -991,7 +1060,7 @@ header {
     }
 
     #mobile i {
-        color: #1a1a1a;
+        color: var(--bg-color);
         font-size: 1.5rem;
         padding-left: 20px;
 
@@ -1142,7 +1211,6 @@ header {
     }
 }
 
-
 /* Desktops */
 @media screen and (min-width: 992px) {
 
@@ -1169,5 +1237,4 @@ header {
     #banner {
         height: 300px;
     }
-
 }

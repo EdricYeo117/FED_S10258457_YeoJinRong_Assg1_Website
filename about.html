@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="css/style.css">
 <script src="javascript/navbar.js"></script>
 <script src="javascript/contact.js"></script>
+<script src="javascript/aboutinitialise.js"></script>
 <!-- Icons -->
 <script src="https://kit.fontawesome.com/9883b55ebe.js" crossorigin="anonymous"></script>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -42,187 +43,194 @@
             <i id="bar" class='bx bx-menu'></i>
         </div>
     </section>
+    <!-- ABOUT SECTION-->
+    <div id="about-section">
+        <!--ABOUT TEXT-->
+        <div id="about-text">
+            <!--Contact Info -->
+            <div class="smalltext">
+                <span>
+                    <img src="public/phone.svg" width="16" height="16" alt="phone icon" style="margin-bottom: -4px">
+                    (+81) 1234567890
+                </span>
+                <div style="float:right">
+                    <img src="public/email.svg" width="16" height="16" alt="email icon" style="margin-bottom: -4px">
+                    yorushikajp@gmail.jp
+                </div>
+            </div>
+            <!--Name-->
+            <div id="hi-and-name">
+                Hi, we're Yorushika
+            </div>
+            <!--Title-->
+            <h1 id="about-h1">
+                A Japanese Indie Jpop Band
+            </h1>
+            <!--Subtitle-->
+            <div class="bigtext">
+                Yorushika is a Japanese indie band formed in 2017. The band consists of N-buna, who writes the songs and
+                plays the instruments, and suis, who is in charge of vocals. The band is signed to Universal Sigma.
+            </div>
+            <!-- Button-->
+            <button id="contact-button"> Contact Me</button>
+        </div>
+        <!-- ABOUT IMAGE-->
+        <div id="about-image-wrap">
+            <img id="about-image" src="public/yorushika-logo.gif">
+        </div>
+    </div>
+
+    <!-- Discography -->
+    <div id="disco-section">
+        <div id="disco-card">
+            <img id="album-image" src="public/magiclantern.jpg" alt="album-1">
+            <div class="album-info">
+                <div class="album-title">Magic Lantern</div>
+                <div class="album-date">2023</div>
+                <div class="album-description">Gentou: The latest album by Yorushika</div>
+            </div>
+        </div>
+
+        <div id="disco-card">
+            <img id="album-image" src="public/Plagarism.webp" alt="album-2">
+            <div class="album-info">
+                <div class="album-title">Plagarism</div>
+                <div class="album-date">2020</div>
+                <div class="album-description">"I'm a thief who steals sounds"</div>
+            </div>
+        </div>
+
+        <div id="disco-card">
+            <img id="album-image" src="public/Elma.webp" alt="album-2">
+            <div class="album-info">
+                <div class="album-title">Elma</div>
+                <div class="album-date">2019</div>
+                <div class="album-description">"Thats Why I Gave Up On Music"</div>
+            </div>
+        </div>
+
+        <div id="disco-card">
+            <img id="album-image" src="public/underdog.webp" alt="album-2">
+            <div class="album-info">
+                <div class="album-title">Underdog</div>
+                <div class="album-date">2018</div>
+                <div class="album-description">"A Loser Doesn't Need an Encore"</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Band Info Section -->
+    <div id="info-section">
+        <div class="overtitle"> Platforms </div>
+        <h2 id="info-section-header"> You can take a look at our platforms here</h2>
+        <div class="bigtext info-section-subtitle"> Here are our main 3 platforms, consisting of Youtube, Spotify and
+            Soundcloud
+        </div>
+        <div class="info-section-boxes">
+            <div class="info-card">
+                <div class="info-section-box">
+                    <div class="platform">
+                        Youtube Music
+                    </div>
+                    <div class="song-count">
+                        100+ <span class="songcount-text"> Songs </span>
+                    </div>
+                    <div class="desription">
+                        @nbuna
+                    </div>
+                    <div class="desc-list">
+                        <ul>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Over 100 songs with music videos</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Streaming with Youtube Premium</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Music videos in album tell an
+                                overarching
+                                narrative</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> NO Region Lock</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.youtube.com/channel/UCRIgIJQWuBJ0Cv_VlU3USNA" target="_blank"><button
+                            class="listen-button"> Listen
+                            Now</button></a>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-section-box">
+                    <div class="platform">
+                        Spotify
+                    </div>
+                    <div class="song-count">
+                        All <span class="songcount-text"> Songs Available </span>
+                    </div>
+                    <div class="desription">
+                        @yorushika
+                    </div>
+                    <div class="desc-list">
+                        <ul>
+                            <li><img src="public/checkmark.svg" class="checkmark"> All songs available on Spotify</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Categorised neatly into albums or
+                                release
+                                date</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Unique hand-crafted playlists</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Exclusive songs on Spotify</li>
+                        </ul>
+                    </div>
+                    <a href="https://open.spotify.com/album/6pZ0SrZCP8Bm28L6JhMtBy" target="_blank"><button
+                            class="listen-button">Listen
+                            Now</button></a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-section-box">
+                    <div class="platform">
+                        Apple Music
+                    </div>
+                    <div class="song-count">
+                        <span class="songcount-text"> Limited Songs </span>
+                    </div>
+                    <div class="desription">
+                        @yorushikajp
+                    </div>
+                    <div class="desc-list">
+                        <ul>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Over 20 iconic songs available for
+                                free
+                                on iOS devices
+                                download</li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> Completely ad-free, hassle-free
+                                downloads
+                            </li>
+                            <li><img src="public/checkmark.svg" class="checkmark"> High-quality studio level mp4 files
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://music.apple.com/us/artist/yorushika/1250709916" target="_blank"><button
+                            class="listen-button">Listen
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer links -->
+        <div id="footer">
+            <ul id="footer-links">
+                <li>
+                    <a href="https://open.spotify.com/artist/4UK2Lzi6fBfUi9rpDt6cik" target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://music.apple.com/us/artist/yorushika/1250709916" target="_blank">
+                        <i class="fa-brands fa-apple"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCRIgIJQWuBJ0Cv_VlU3USNA">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <span class="copyright"> © 2023, Yorushika Official</span>
+        </div>
 </body>
-<!-- ABOUT SECTION-->
-<div id="about-section">
-    <!--ABOUT TEXT-->
-    <div id="about-text">
-        <!--Contact Info -->
-        <div class="smalltext">
-            <span>
-                <img src="public/phone.svg" width="16" height="16" alt="phone icon" style="margin-bottom: -4px">
-                (+81) 1234567890
-            </span>
-            <div style="float:right">
-                <img src="public/email.svg" width="16" height="16" alt="email icon" style="margin-bottom: -4px">
-                yorushikajp@gmail.jp
-            </div>
-        </div>
-        <!--Name-->
-        <div id="hi-and-name">
-            Hi, we're Yorushika
-        </div>
-        <!--Title-->
-        <h1 id="about-h1">
-            A Japanese Indie Jpop Band
-        </h1>
-        <!--Subtitle-->
-        <div class="bigtext">
-            Yorushika is a Japanese indie band formed in 2017. The band consists of N-buna, who writes the songs and
-            plays the instruments, and suis, who is in charge of vocals. The band is signed to Universal Sigma.
-        </div>
-        <!-- Button-->
-        <button id="contact-button"> Contact Me</button>
-    </div>
-    <!-- ABOUT IMAGE-->
-    <div id="about-image-wrap">
-        <img id="about-image" src="public/yorushika-logo.gif">
-    </div>
-</div>
-
-<!-- Discography -->
-<div id="disco-section">
-    <div id="disco-card">
-        <img id="album-image" src="public/magiclantern.jpg" alt="album-1">
-        <div class="album-info">
-            <div class="album-title">Magic Lantern</div>
-            <div class="album-date">2023</div>
-            <div class="album-description">Gentou: The latest album by Yorushika</div>
-        </div>
-    </div>
-
-    <div id="disco-card">
-        <img id="album-image" src="public/Plagarism.webp" alt="album-2">
-        <div class="album-info">
-            <div class="album-title">Plagarism</div>
-            <div class="album-date">2020</div>
-            <div class="album-description">"I'm a thief who steals sounds"</div>
-        </div>
-    </div>
-
-    <div id="disco-card">
-        <img id="album-image" src="public/Elma.webp" alt="album-2">
-        <div class="album-info">
-            <div class="album-title">Elma</div>
-            <div class="album-date">2019</div>
-            <div class="album-description">"Thats Why I Gave Up On Music"</div>
-        </div>
-    </div>
-
-    <div id="disco-card">
-        <img id="album-image" src="public/underdog.webp" alt="album-2">
-        <div class="album-info">
-            <div class="album-title">Underdog</div>
-            <div class="album-date">2018</div>
-            <div class="album-description">"A Loser Doesn't Need an Encore"</div>
-        </div>
-    </div>
-</div>
-
-<!-- Band Info Section -->
-<div id="info-section">
-    <div class="overtitle"> Platforms </div>
-    <h2 id="info-section-header"> You can take a look at our platforms here</h2>
-    <div class="bigtext info-section-subtitle"> Here are our main 3 platforms, consisting of Youtube, Spotify and
-        Soundcloud
-    </div>
-    <div class="info-section-boxes">
-        <div class="info-card">
-            <div class="info-section-box">
-                <div class="platform">
-                    Youtube Music
-                </div>
-                <div class="song-count">
-                    100+ <span class="songcount-text"> Songs </span>
-                </div>
-                <div class="desription">
-                    @nbuna
-                </div>
-                <div class="desc-list">
-                    <ul>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Over 100 songs with music videos</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Streaming with Youtube Premium</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Music videos in album tell an overarching
-                            narrative</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> NO Region Lock</li>
-                    </ul>
-                </div>
-                <a href="https://www.youtube.com/channel/UCRIgIJQWuBJ0Cv_VlU3USNA" target="_blank"><button class="listen-button"> Listen
-                        Now</button></a>
-            </div>
-        </div>
-        <div class="info-card">
-            <div class="info-section-box">
-                <div class="platform">
-                    Spotify
-                </div>
-                <div class="song-count">
-                    All <span class="songcount-text"> Songs Available </span>
-                </div>
-                <div class="desription">
-                    @yorushika
-                </div>
-                <div class="desc-list">
-                    <ul>
-                        <li><img src="public/checkmark.svg" class="checkmark"> All songs available on Spotify</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Categorised neatly into albums or release
-                            date</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Unique hand-crafted playlists</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Exclusive songs on Spotify</li>
-                    </ul>
-                </div>
-                <a href="https://open.spotify.com/album/6pZ0SrZCP8Bm28L6JhMtBy" target="_blank"><button class="listen-button">Listen
-                        Now</button></a>
-            </div>
-        </div>
-
-        <div class="info-card">
-            <div class="info-section-box">
-                <div class="platform">
-                    Apple Music
-                </div>
-                <div class="song-count">
-                    <span class="songcount-text"> Limited Songs </span>
-                </div>
-                <div class="desription">
-                    @yorushikajp
-                </div>
-                <div class="desc-list">
-                    <ul>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Over 20 iconic songs available for free
-                            on iOS devices
-                            download</li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> Completely ad-free, hassle-free downloads
-                        </li>
-                        <li><img src="public/checkmark.svg" class="checkmark"> High-quality studio level mp4 files</li>
-                    </ul>
-                </div>
-                <a href="https://music.apple.com/us/artist/yorushika/1250709916" target="_blank"><button class="listen-button">Listen
-                        Now</button></a>
-            </div>
-        </div>
-    </div>
-    <!-- Footer links -->
-    <div id="footer">
-        <ul id="footer-links">
-            <li>
-                <a href="https://open.spotify.com/artist/4UK2Lzi6fBfUi9rpDt6cik" target="_blank">
-                <i class="fa-brands fa-spotify"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://music.apple.com/us/artist/yorushika/1250709916" target="_blank"> 
-                <i class="fa-brands fa-apple"></i>
-            </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/channel/UCRIgIJQWuBJ0Cv_VlU3USNA">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </li>
-        </ul>
-        <span class="copyright"> © 2023, Yorushika Official</span>
-    </div>
-    </body>
 
 </html>
