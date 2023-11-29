@@ -555,7 +555,8 @@ textarea {
 
 .album-title {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--s2-color);
 }
 
 .album-date {
@@ -566,8 +567,8 @@ textarea {
 
 .album-description {
     margin-top: 10px;
-    font-size: 0.9rem;
-    color: var(--s3-color);
+    font-size: 1.25rem;
+    color: var(--text-color);
 }
 
 /* Info-Platforms Section */
