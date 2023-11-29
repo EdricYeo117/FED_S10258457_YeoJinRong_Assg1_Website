@@ -92,14 +92,14 @@ h1 {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--bg-color);
+    color: var(--s2-color);
     transition: 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: var(--s1-color);
-    transition: color 0.3s ease; 
+    color: var(--main-color);
+    transition: color 0.3s ease;
 }
 
 #navbar li a.active::after,
@@ -107,7 +107,7 @@ h1 {
     content: "";
     width: 30%;
     height: 2px;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -179,7 +179,7 @@ h1 {
     border-radius: 5px;
     width: 100%;
     height: 240px;
-    border: 1px solid black;
+    border: 1px solid var(--s2-color);
 }
 
 /* Styles for albums */
@@ -207,21 +207,21 @@ h1 {
 #spotify-button {
     background-color: var(--bg-color);
     border-radius: 5px;
+    border-color: var(--s3-color);
     color: white;
     padding: 2.5px;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
-  }
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
 #spotify-button:hover {
     background-color: var(--s1-color);
-    transition: color 0.3s ease; 
-  }
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
 
-#spotify-button {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
 /* Styles for shows list/table*/
 
 h2 {
@@ -270,23 +270,25 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
-  }
+}
 
 #live-button:hover {
     background-color: var(--s1-color);
-    transition: color 0.3s ease; 
-  }
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
 
 #live-button {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
+}
 
 /* Footer Styles and copyright */
 
 h3 {
     margin-top: 0;
     margin-bottom: 8px;
-    font-size: 1.75rem;transition: color 0.3s ease; 
+    font-size: 1.75rem;
+    transition: color 0.3s ease;
 
 }
 
@@ -305,7 +307,8 @@ h3 {
     padding: 0 16px;
     margin: 8px 16px;
 }
-#footer-links li i{
+
+#footer-links li i {
     font-size: 1.5rem;
     font-size: 1rem;
 }
@@ -317,8 +320,8 @@ h3 {
 }
 
 #footer-links li a.spotify {
-    color: #1DB954; 
-    transition: color 0.3s ease; 
+    color: #1DB954;
+    transition: color 0.3s ease;
 }
 
 #footer-links li a.spotify:hover {
@@ -327,7 +330,7 @@ h3 {
 
 #footer-links li a.apple {
     color: var(--s3-color) 50%;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 #footer-links li a.apple:hover {
@@ -336,7 +339,7 @@ h3 {
 
 #footer-links li a.youtube {
     color: #FF0000;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 #footer-links li a.youtube:hover {
@@ -399,7 +402,7 @@ textarea {
     max-width: 500px;
     margin: 0 auto 48px auto;
     /* Prevent content overflow */
-    border: 1px solid black;
+    border: 1px solid var(--s2-color);
 }
 
 #about-text {
@@ -423,7 +426,7 @@ textarea {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    color: 000000;
+    color: #000000;
     width: 100%;
 }
 
@@ -633,6 +636,7 @@ textarea {
     color: var(--s1-color);
     border-bottom: 2px solid var(--main-color);
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .checkmark {
@@ -907,7 +911,7 @@ header {
     font-size: 1rem;
     background: var(--s1-color);
     background: -webkit-radial-gradient(33% 100% circle, var(--s1-color) 4%, var(--main-color) 30%, var(--s1-color) 62%, var(--main-color) 85%, var(--s1-color));
-	background: radial-gradient(circle at 33% 100%, var(--s1-color) 4%, var(--main-color) 30%, var(--s1-color) 62%, var(--main-color) 85%, var(--s1-color));
+    background: radial-gradient(circle at 33% 100%, var(--s1-color) 4%, var(--main-color) 30%, var(--s1-color) 62%, var(--main-color) 85%, var(--s1-color));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -916,7 +920,7 @@ header {
     font-size: 1rem;
     background: var(--main-color);
     background: -webkit-radial-gradient(33% 100% circle, var(--main-color) 4%, var(--s1-color) 30%, var(--main-color) 62%, var(--s1-color) 85%, var(--main-color));
-	background: radial-gradient(circle at 33% 100%, var(--main-color) 4%, var(--s1-color) 30%, var(--main-color) 62%, var(--s1-color) 85%, var(--main-color));
+    background: radial-gradient(circle at 33% 100%, var(--main-color) 4%, var(--s1-color) 30%, var(--main-color) 62%, var(--s1-color) 85%, var(--main-color));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -948,6 +952,7 @@ header {
     margin-bottom: 8px;
     padding: 8px;
 }
+
 #venue-details {
     display: flex;
     flex-direction: column;
@@ -1115,6 +1120,21 @@ header {
 
 /* Laptops */
 @media screen and (min-width: 768px) {
+
+    /* Nav bar styles */
+    #navbar li a:hover,
+    #navbar li a.active {
+        color: var(--s1-color);
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        background-color: var(--main-color);
+    }
+
+    #navbar li a {
+        color: var(--bg-color);
+    }
 
     /* index.html styles */
     #banner {
