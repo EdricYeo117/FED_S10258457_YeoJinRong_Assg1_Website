@@ -27,3 +27,5 @@ https://yorushika.fandom.com/wiki/Moonlight_(Album)
 https://yorushika.fandom.com/wiki/Underdog_(EP)
 https://static.wikia.nocookie.net/yorushika/images/a/a5/YorushikaWikiLogo.png/revision/latest?cb=20220304180740
 https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fdg9tis5l4v751.png
+https://store.plusmember.jp/yorushika/ (All product images taken directly from store)
+

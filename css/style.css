@@ -171,6 +171,58 @@ h1 {
     margin-top: 0;
 }
 
+#description li,
+#social li {
+    display: inline;
+}
+#description li i {
+    font-size:2rem;
+    padding: 10px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+}
+#social li i {
+    font-size:3rem;
+    padding: 20px;
+}
+
+/* Social Media Icons for index.html and about.html */
+#description li a.twitter,
+#social li a.twitter  {
+    color: #1DA1F2;
+    transition: color 0.3s ease;
+}
+
+#description li a.twitter:hover,
+#social li a.twitter:hover  {
+    color: var(--s1-color);
+}
+
+#description li a.instagram,
+#social li a.instagram {
+    color: #E4405F;
+    transition: color 0.3s ease;
+}
+
+#description li a.instagram:hover,
+#social li a.instagram:hover  {
+    color: var(--s1-color);
+}
+
+#description li a.tiktok,
+#social li a.tiktok {
+    color: #69C9D0;
+    transition: color 0.3s ease;
+}
+
+#description li a.tiktok:hover,
+#social li a.tiktok:hover  {
+    color: var(--s1-color);
+}
+
 #band {
     width: 100%;
 }
@@ -306,11 +358,12 @@ h3 {
 #footer-links li {
     padding: 0 16px;
     margin: 8px 16px;
+    display: inline;
+    justify-content: center;
 }
 
 #footer-links li i {
-    font-size: 1.5rem;
-    font-size: 1rem;
+    font-size: 2.5rem;
 }
 
 .copyright {
@@ -408,6 +461,8 @@ textarea {
 #about-text {
     width: 100%;
     font-size: 1.25rem;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 #about-image-wrap {
@@ -639,7 +694,7 @@ textarea {
     transition: color 0.3s ease;
 }
 
-.checkmark {
+#checkmark {
     width: 16px;
     height: 16px;
     margin-bottom: -2px;
@@ -1051,11 +1106,6 @@ header {
     .form-group textarea {
         width: 80%
     }
-
-    #footer-links li {
-        display: inline;
-    }
-
 }
 
 /* Mobiles - Max Width */
