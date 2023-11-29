@@ -19,6 +19,7 @@ This provides the band an opportunity to bridge the cultural gap between itself 
 ## Citations:
 https://media.tenor.com/ukcB7ii25V0AAAAC/yorushika-yorushika-logo.gif
 https://icons8.com/icons/set/checkmark
+https://icons8.com/icon/6483/cross
 https://yorushika.fandom.com/wiki/Magic_Lantern
 https://yorushika.fandom.com/wiki/Plagiarism_(Album)
 https://yorushika.fandom.com/wiki/Elma_(Album)
