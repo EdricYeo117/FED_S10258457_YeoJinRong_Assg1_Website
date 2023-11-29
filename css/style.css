@@ -98,7 +98,8 @@ h1 {
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: var(--s1-color)
+    color: var(--s1-color);
+    transition: color 0.3s ease; 
 }
 
 #navbar li a.active::after,
@@ -215,6 +216,7 @@ h1 {
 
 #spotify-button:hover {
     background-color: var(--s1-color);
+    transition: color 0.3s ease; 
   }
 
 #spotify-button {
@@ -272,6 +274,7 @@ h2 {
 
 #live-button:hover {
     background-color: var(--s1-color);
+    transition: color 0.3s ease; 
   }
 
 #live-button {
@@ -283,7 +286,7 @@ h2 {
 h3 {
     margin-top: 0;
     margin-bottom: 8px;
-    font-size: 1.75rem;
+    font-size: 1.75rem;transition: color 0.3s ease; 
 
 }
 
@@ -313,8 +316,34 @@ h3 {
     text-align: center;
 }
 
+#footer-links li a.spotify {
+    color: #1DB954; 
+    transition: color 0.3s ease; 
+}
 
-/* Form styles, will use for index.html and about us*/
+#footer-links li a.spotify:hover {
+    color: var(--s1-color);
+}
+
+#footer-links li a.apple {
+    color: var(--s3-color) 50%;
+    transition: color 0.3s ease; 
+}
+
+#footer-links li a.apple:hover {
+    color: var(--s1-color);
+}
+
+#footer-links li a.youtube {
+    color: #FF0000;
+    transition: color 0.3s ease; 
+}
+
+#footer-links li a.youtube:hover {
+    color: var(--s1-color);
+}
+
+/* Form styles, will use for index.html*/
 
 #ticket-book {
     max-width: 500px;
