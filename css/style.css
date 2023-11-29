@@ -852,6 +852,66 @@ header {
     color: var(--s2-color);
 }
 
+/* Venue Info Styling */
+#venue-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#venue-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#venue-details .details span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--s1-color);
+}
+
+#venue-details .details h2 {
+    font-size: 2.25rem;
+    line-height: 35px;
+    padding: 20px;
+}
+
+#venue-details .details h3 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+#venue-details .details li {
+    display: flex;
+    padding: 10px 0;
+}
+
+#venue-details .details li i {
+    font-size: 1.25rem;
+    padding-right: 22px;
+}
+
+#venue-details .details li p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#venue-details .map {
+    width: 100%;
+    height: 400px;
+}
+
+#venue-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 /* Media Queries */
@@ -1066,7 +1126,22 @@ header {
     #band-details .map {
         width: 55%;
     }
+
+    /* Venue Info Styling */
+    #band-details {
+        flex-direction: row;
+    }
+
+    #band-details .details {
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    #band-details .map {
+        width: 55%;
+    }
 }
+
 
 /* Desktops */
 @media screen and (min-width: 992px) {
@@ -1075,6 +1150,17 @@ header {
         font-size: 16px;
     }
 
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .shop {
+        margin-top: 2rem !important;
+    }
 }
 
 /* Large Desktops */
