@@ -68,7 +68,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80x;
+    padding: 20px 80px;
     background-color: var(--bg-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     background: rgb(67, 70, 69);
@@ -386,7 +386,7 @@ h3 {
 }
 
 #footer-links li a.apple {
-    color: var(--s3-color) 50%;
+    color: rgba(var(--s3-color), 0.5); 
     transition: color 0.3s ease;
 }
 
@@ -620,7 +620,7 @@ textarea {
     text-align: center;
     margin: 0;
     border-radius: 0;
-    box-shadow: 6px 2px 25px -9x #0000001A;
+    box-shadow: 6px 2px 25px -9px #0000001A;
     width: 100%;
 }
 
@@ -829,7 +829,7 @@ header {
     margin: 1.5rem auto 0 auto;
     padding: 12px 20px;
     border: none;
-    background: bg-color;
+    background: var(--bg-color);
     color: #000000;
     font-size: 1rem;
     font-weight: 500;
@@ -838,6 +838,7 @@ header {
 
 .btn-buy:hover {
     background: var(--text-color);
+    transition: 0.3s ease;
 }
 
 #close-cart {
