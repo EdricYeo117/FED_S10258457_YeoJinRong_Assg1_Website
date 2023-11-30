@@ -118,6 +118,8 @@ ii) Some mobile responsiveness media queries do not work if using min-width, had
 iii) Some difficulty changing gradient of icons, had to use an interesting method using background to change the gradient
 iv) Contact.js button is not working, despite the code being sound and logical. Error might be linked to browser cache or email settings,
 possible that javascript can only open a prompt to email instead of sending it remotely
+v) Intialising multiple javascript files into a single html file is not possible, unless an additional javascript file wrapping all the functions in a single function, then using window.onload = function;
+This was an issue when trying to implement cart.js and navbar.js
 
 ## Credits
 
