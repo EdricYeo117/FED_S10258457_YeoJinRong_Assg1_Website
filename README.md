@@ -40,7 +40,8 @@ CSS - https://developer.mozilla.org/en-US/docs/Web/CSS
 Utilised to provide styling for HTML 
 JavaScript - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 Utilised to construct navbar menu and shopping cart
-
+FormBold - https://formbold.com/
+Used for form submissions
 ## Testing
 ### 1. Navbar
 i) Check mobile responsiveness of navbar
