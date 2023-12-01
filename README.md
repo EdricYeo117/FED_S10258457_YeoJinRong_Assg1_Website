@@ -31,7 +31,8 @@ https://xd.adobe.com/view/42384bc7-f8fd-4d1d-963e-4b3841b46775-176b/
 4) "LIVE" Page that showcases the google map location of respective venues for the live tour 
 
 ## Technologies Used
-
+Visual Studio Code utilised to compile code
+https://code.visualstudio.com/
 Utilises HTML5, CSS and Javascript
 HTML5 - https://developer.mozilla.org/en-US/docs/Glossary/HTML5
 Utilised for constructing website in html
