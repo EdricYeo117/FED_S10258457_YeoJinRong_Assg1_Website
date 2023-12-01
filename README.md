@@ -122,6 +122,12 @@ iv) Contact.js button is not working, despite the code being sound and logical. 
 possible that javascript can only open a prompt to email instead of sending it remotely
 v) Intialising multiple javascript files into a single html file is not possible, unless an additional javascript file wrapping all the functions in a single function, then using window.onload = function;
 This was an issue when trying to implement cart.js and navbar.js
+vi) Bugs encountered when trying to link entire button/card as an anchor, shows up as an error in verifier provided but works fine in website, no errors shown in console either
+vii) Bugs encountered when putting "close" svg into list for mobile nar bar menu, conflicts shown in verifier but works fine in website, no errors shown in console either
+viii) Bugs encountered in using native svgs, opted to use boxicons and fontawesome to bypass these restrictions
+ix) Encountered issues when linking iframe youtube video embeds, possibly due to copyright restrictions done by Yorushika, therefore opted to not use any embeds for Youtube
+x) Spotify Youtube API implementation was too complex, opted to not attempt it
+xi) Cart.js function had issues running intiailly, had to exercise compartmentalisation and the 4 functions for add/remove/change/buy under the ready() function to work
 
 ## Credits
 
